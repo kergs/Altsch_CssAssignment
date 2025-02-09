@@ -1,130 +1,167 @@
-
-
-
-* {
+#home {
+    font-family: Arial, sans-serif;
+    justify-content: center;
+    align-items: center;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family: Arial, sans-serif;
-  }
-  
-  body {
-    background-color: #f8fcfb;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+nav {
+    width: 400px;
+    float: left;
+    height: 50px;
+    background: #333;
+    padding: 10px 0;
+}
+
+nav ul {
+    float: left;
     display: flex;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
-    padding: 20px;
-  }
-  
-  .container {
-    display: flex;
-    max-width: 900px;
-    width: 100%;
-    background-color: white;
-    border-radius: 12px;
-    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    overflow: hidden;
-  }
-  
-  .info-section {
-    flex: 1;
-    background-color: #f8fcfb;
-    padding: 40px 20px;
-    text-align: left;
-  }
-  
-  .info-section .logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, #f8b133, #009d9c);
-    margin-bottom: 20px;
-  }
-  
-  .info-section h1 {
-    font-size: 24px;
-    margin-bottom: 10px;
-    font-weight: bold;
-  }
-  
-  .info-section p {
+    list-style: none;
+    
+}
+
+nav ul li {
+    list-style: none;
+    margin-left: 62px;
+    margin-top: 27px;
     font-size: 14px;
-    line-height: 1.6;
-    color: #666;
-  }
-  
-  .form-section {
-    flex: 1.5;
-    padding: 40px 20px;
-    background: white;
-  }
-  
-  form {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .form-group {
-    display: flex;
-    gap: 20px;
-    margin-bottom: 20px;
-  }
-  
-  .form-control {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-  }
-  
-  label {
-    font-size: 14px;
-    font-weight: bold;
-    margin-bottom: 5px;
-  }
-  
-  input,
-  select {
-    padding: 10px;
-    font-size: 14px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    outline: none;
-  }
-  
-  input:focus,
-  select:focus {
-    border-color: #009d9c;
-  }
-  
-  .register-btn {
-    padding: 12px;
-    font-size: 16px;
+    margin: 0 15px;
+}
+
+nav ul li a {
     color: white;
-    background: #009d9c;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-top: 10px;
-    transition: background 0.3s ease;
-  }
-  
-  .register-btn:hover {
-    background: #007a76;
-  }
-  
-  .terms {
-    font-size: 12px;
-    text-align: center;
-    margin-top: 10px;
-  }
-  
-  .terms a {
-    color: #009d9c;
     text-decoration: none;
-  }
-  
-  .terms a:hover {
-    text-decoration: underline;
-  }
-  
+    font-size: 18px;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f8fcfb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  padding: 20px;
+}
+
+.container {
+  display: flex;
+  max-width: 900px;
+  width: 100%;
+  background-color: white;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.info-section {
+  flex: 1;
+  background-color: #f8fcfb;
+  padding: 40px 20px;
+  text-align: left;
+}
+
+.info-section .logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #f8b133, #009d9c);
+  margin-bottom: 20px;
+}
+
+.info-section h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.info-section p {
+  font-size: 14px;
+  line-height: 1.6;
+  color: #666;
+}
+
+.form-section {
+  flex: 1.5;
+  padding: 40px 20px;
+  background: white;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.form-control {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+input,
+select {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  border-color: #009d9c;
+}
+
+.register-btn {
+  padding: 12px;
+  font-size: 16px;
+  color: white;
+  background: #009d9c;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background 0.3s ease;
+}
+
+.register-btn:hover {
+  background: #007a76;
+}
+
+.terms {
+  font-size: 12px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.terms a {
+  color: #009d9c;
+  text-decoration: none;
+}
+
+.terms a:hover {
+  text-decoration: underline;
+}
